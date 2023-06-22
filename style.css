@@ -1,0 +1,491 @@
+/*----------------
+VARIABLES
+------------------*/
+
+:root {
+  --primaryColor: rgb(49, 49, 49);
+  --secondaryColor: rgb(29, 82, 124);
+  --whiteColor: #fff;
+  --blueColor: rgb(1, 47, 91);
+}
+
+/*---------------
+DEFAULT STYLES 
+-----------------*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s ease-in-out;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 100%;
+  background-color: #f7f7f7;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 3.5rem;
+  letter-spacing: 1.8px;
+  text-align: center;
+}
+
+.section-title:after {
+  display: block;
+  content: '';
+  height: 4px;
+  margin: 10px auto;
+  width: 150px;
+}
+
+.bg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+button {
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  border: 2px solid rgb(80, 109, 245);
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  background-color: transparent;
+  color: white;
+}
+
+/*----------------------------------------
+                  NAV SECTION
+-------------------------------------------*/
+
+.nav {
+  background-color: #313131;
+  padding: 1.7rem 0;
+  color: #fff;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  gap: 1rem;
+}
+
+.nav-logo-img {
+  width: 5rem;
+}
+
+.nav-logo-heading {
+  color: #fff;
+}
+
+.nav-item-p {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.nav-btn {
+  border: 2px solid var(--whiteColor);
+}
+
+.nav-btn:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+/*--------------------------------
+                  HEADER SECTION 
+-----------------------------------*/
+
+.header {
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(img/header.jpg);
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+}
+
+.header-heading {
+  font-size: 3rem;
+}
+
+.header-p {
+  padding: 1.2rem 0;
+  font-weight: 500;
+  max-width: 700px;
+}
+
+.header-btn-group {
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
+
+.header-btn-group .header-btn:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+  border: none;
+}
+
+/*--------------------------------------
+                  PRICE SECTION
+----------------------------------------*/
+
+.price-item {
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.price-item .price-span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.price-item .price-span-cifra {
+  font-size: 4rem;
+  color: #012f5b;
+  padding: 20px 0px;
+}
+
+.price-item:hover {
+  transform: scale(1.1);
+  background: #fff;
+}
+
+.price-item .price-text {
+  padding: 0 0 1.5rem 0;
+}
+
+.price-btn {
+  border: 2px solid rgb(80, 109, 245);
+  color: rgb(80, 109, 245);
+}
+
+.price-btn:hover {
+  background-color: rgb(80, 109, 245);
+  color: var(--whiteColor);
+}
+
+/*---------------------------------------
+                  SERVICES SECTION 
+------------------------------------------*/
+
+.services {
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../img/bg2.jpg);
+}
+
+.services-heading {
+  color: #fff;
+}
+
+.services-heading::after {
+  background-color: #fde21c;
+}
+
+.services-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.services-wrapper .services-item {
+  flex-basis: 30%;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+.services-wrapper .services-item .services-img {
+  border-radius: 10px;
+}
+
+.services-wrapper .services-item .services-h4 {
+  font-size: 1.7rem;
+  font-weight: 300;
+  padding: 1.5rem;
+}
+
+.services-wrapper .services-item .services-p {
+  font-weight: 300;
+  padding: 0 0 1.5rem 1.5rem;
+}
+
+.services-wrapper .services-item .services-btn {
+  border: 2px solid rgb(80, 109, 245);
+  color: rgb(80, 109, 245);
+  margin: 0 0 1.5rem 1.5rem;
+}
+
+.services-wrapper .services-item .services-btn:hover {
+  background-color: rgb(80, 109, 245);
+  color: var(--whiteColor);
+}
+
+/*-------------------------------------
+                  TEAM SECTION 
+---------------------------------------*/
+
+.team-heading {
+  color: #000;
+}
+
+.team-heading::after {
+  background-color: #000;
+}
+
+.team-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.team-wrapper .team-item {
+  flex-basis: 23%;
+  margin-top: 4rem;
+  border: 1px solid #d3d3d3;
+}
+
+.team-wrapper .team-item:hover {
+  box-shadow: 2px 2px 15px;
+}
+
+.team-wrapper .team-item .team-content {
+  padding: 20px;
+}
+
+.team-wrapper .team-item .team-content h4 {
+  font-size: 1.4rem;
+}
+
+.team-wrapper .team-item .team-content span {
+  color: #506df5;
+  text-transform: capitalize;
+  display: block;
+  margin: 1rem 0;
+}
+/*-------------------------------------
+
+
+/*------------------------------------------------
+                  REPAIR SERVICES SECTION 
+--------------------------------------------------*/
+
+.servicesRepair {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(img/bg2.jpg);
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.servicesRepair-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.servicesRepair-wrapper .servicesRepair-item {
+  flex: 0 0 45%;
+}
+
+.servicesRepair-wrapper .servicesRepair-item .servicesRepair-heading {
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 20px 0px;
+}
+
+.servicesRepair-wrapper .servicesRepair-tem .servicesRepair-p {
+  max-width: 450px;
+}
+
+.servicesRepair-wrapper .servicesRepair-item .services-btn {
+  border: 2px solid #fde21c;
+  color: #fde21c;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.servicesRepair-wrapper .servicesRepair-item .services-btn:hover {
+  background-color: #fde21c;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid #fde21c;
+}
+
+/* 
+                  ABOUT SECTION 
+*/
+
+.about-wrapper {
+  display: flex;
+  gap: 3rem;
+}
+
+.about-wrapper .about-item {
+  flex: 1 1 300px;
+}
+
+/*
+RESPONSIVE media query
+*/
+
+@media (max-width: 992px) {
+  .nav-item-p {
+    display: none;
+  }
+  .price {
+    flex-direction: column;
+  }
+  .team-wrapper {
+    flex-wrap: wrap;
+  }
+  .team-wrapper .team-item {
+    flex-basis: 45%;
+  }
+  .team-wrapper .team-item .team-content p {
+    padding-top: 20px;
+  }
+  .services-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .services-wrapper .services-item {
+    /* objedinjeno flex: 0 0 80%; */
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 80%;
+    margin-top: 2rem;
+  }
+  .container {
+    width: 90%;
+  }
+  .servicesRepair-wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about-wrapper {
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+  }
+  .about-wrapper .about-item {
+    flex: 1 0%;
+  }
+
+  @media (max-width: 768px) {
+    .team-wrapper {
+      flex-wrap: wrap;
+    }
+    .team-wrapper {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    body {
+      font-size: 80%;
+    }
+    .btn {
+      font-size: 0.8rem;
+      padding: 0.7rem 1.1rem;
+    }
+    .header-p {
+      font-size: 0.9rem;
+    }
+    .nav-logo-img {
+      width: 60px;
+    }
+    .nav-wrapper .nav-btn {
+      font-size: 0.9rem;
+      padding: 10px 25px;
+    }
+    .services-heading {
+      font-size: 2.5rem;
+    }
+    .services-wrapper .services-item {
+      flex-basis: 100%;
+      margin-top: 2rem;
+    }
+    .services-wrapper .services-item .services-h4 {
+      font-size: 1.4rem;
+    }
+    .services-wrapper .services-item .services-btn {
+      font-size: 0.9rem;
+      padding: 10px 25px;
+    }
+    .team-wrapper {
+      flex-direction: column;
+    }
+    .team-heading {
+      font-size: 2.5rem;
+    }
+    .team-wrapper {
+      width: 90%;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .nav-wrapper {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+  @media (max-width: 280px) {
+    .header {
+      height: 80vh;
+    }
+    .header-heading {
+      font-size: 2rem;
+    }
+    .header-p {
+      padding: 1rem 0;
+      font-weight: 500;
+      max-width: 600px;
+      font-size: 0.8rem;
+    }
+  }
+}
