@@ -1,5 +1,5 @@
 # 6-HouseWorkers-project
- https://duskorsl.github.io/6-HouseWorkers-project/
+ https://D-vokic.github.io/6-HouseWorkers-project/
 
 Hi, I am Duško.
 
