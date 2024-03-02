@@ -1,4 +1,4 @@
-# 6-HouseWorkers-project
+# HouseWorkers-project
  https://D-vokic.github.io/6-HouseWorkers-project/
 
 Hi, I am Duško.
